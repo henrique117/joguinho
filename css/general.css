@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    border: none;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 600;
+}
+
+.floor {
+    height: 100vh;
+    background: linear-gradient(green, lightgreen);
+}
+
+.clouds {
+    top: 30px;
+    position: absolute;
+    width: 400px;
+    animation: cloudMove 20s infinite linear;
+}
+
+.cloud {
+    top: 150px;
+    position: absolute;
+    width: 400px;
+    animation: cloudMove 20s infinite linear;
+}
+
+@keyframes cloudMove {
+    from {
+        left: -400px;
+    }
+    to {
+        left: 100%;
+    }
+}
